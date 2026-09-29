@@ -26,4 +26,4 @@ const ratingSchema = new mongoose.Schema(
 // Compound unique index to prevent a user from rating the same movie twice
 ratingSchema.index({ movieCode: 1, ratedBy: 1 }, { unique: true });
 
-export default mongoose.model('Rating', ratingSchema);
+export const Rating = mongoose.model('Rating', ratingSchema);

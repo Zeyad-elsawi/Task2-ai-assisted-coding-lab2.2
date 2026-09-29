@@ -1,5 +1,5 @@
 import Joi from 'joi';
-import Rating from '../models/Rating.js';
+import { Rating } from '../models/Rating.js';
 
 const createRatingSchema = Joi.object({
   movieCode: Joi.string().required(),
